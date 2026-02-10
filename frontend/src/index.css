@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+.bg-color {
+    background-color: yellow;
+}
+
+/* 주요 버튼 */
+.btn-primary {
+  @apply w-full bg-blue-700 text-white p-2 rounded hover:bg-blue-800;
+}
+
+/* 보조 버튼 */
+.btn-secondary {
+  @apply w-full bg-green-700 text-white p-2 rounded hover:bg-green-800;
+}
+
+/* 경고 버튼 */
+.btn-warning {
+  @apply w-full bg-yellow-700 text-white p-2 rounded hover:bg-yellow-800;
+}
+
+/* 위험 버튼 */
+.btn-danger {
+  @apply w-full bg-red-700 text-white p-2 rounded hover:bg-red-800;
+}
+
+.btn-search {
+  @apply bg-blue-700 text-white hover:bg-blue-800 px-4 py-2 rounded-r min-w-[5rem];
+}
+
+/* 인풋 필드 */
+.input {
+  @apply w-full border border-gray-300 rounded p-2 focus:outline-none focus:ring focus:ring-blue-500;
+}
+
+/* 라벨 */
+.label {
+  @apply block text-gray-700 font-medium mb-1;
+}
+
+/* 카드 형태 (선택사항) */
+.card {
+  @apply p-4 bg-white shadow-md rounded-xl;
+}
