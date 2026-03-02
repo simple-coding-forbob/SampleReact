@@ -9,10 +9,7 @@ function LoginView() {
   const nav = useNavigate();
 
   const handleLogin = async () => {
-    const jwt={accessToken:"1234567890"};
-    // localStorage.setItem("jwt", "1234567890");
-    // const loggedIn=true;
-    login(jwt);
+    login();
     nav("/");
   };
 

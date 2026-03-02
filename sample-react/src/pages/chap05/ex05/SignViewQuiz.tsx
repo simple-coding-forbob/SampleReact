@@ -8,9 +8,9 @@ function SignViewQuiz() {
   const { signin } = useAuthStore();
   const nav = useNavigate();
 
+  
   const handleLogin = async () => {
-    const jwt2={accessToken:"1234567890"};
-    signin(jwt2);
+    signin();
     nav("/");
   };
 
