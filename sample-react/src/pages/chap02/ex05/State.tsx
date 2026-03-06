@@ -11,11 +11,11 @@ function State() {
     setB("안녕하세요");
   };
 
-  const [c, setC] = useState<boolean>(true);
-  const color: string = c === true ? "bg-orange-600" : "bg-yellow-600";
+  const [c, setC] = useState<string>("bg-orange-600");
+  // const color: string = c === true ? "bg-orange-600" : "bg-yellow-600";
 
   const myUpdate3 = () => {
-    setC(false);
+    setC("bg-yellow-600");
   };
 
   return (
@@ -40,7 +40,7 @@ function State() {
       </button>
       <br />
       <br />
-      <h1 className={`${color} text-white`}>색깔바뀜</h1>
+      <h1 className={c}>색깔바뀜</h1>
       <br />
       <button
         onClick={myUpdate3}
