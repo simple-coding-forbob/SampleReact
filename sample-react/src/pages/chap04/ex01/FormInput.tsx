@@ -16,8 +16,6 @@ function FormInput() {
       <form>
         <label htmlFor="name" className="block mb-2">이름</label>
         <input type="text" 
-              value={name} 
-              name="name" 
               className="input  mb-2"
               onChange={chName} />
         <button 
